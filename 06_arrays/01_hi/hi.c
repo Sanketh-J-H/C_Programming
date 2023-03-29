@@ -6,22 +6,33 @@
  * the proprietary works, trade secrets, and copyrights of Embitel or its licensors.
  * For further information, contact community.ruggedboard.com / info@ruggedboard.com
  *
- * Application: 
- * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Application:
+ * Brief:
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 29.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
+#include <string.h>
 
-// Main Function
 int main()
 {
-     
-     return 0;
+  char str[20];
+  printf("Plz enter a str: ");
+  scanf("%s", str);
+
+  if (strcmp(str, "hi") == 0)
+  {
+    printf("Hello\n");
+  }
+  else
+  {
+    printf("not enter hi\n");
+  }
+  return 0;
 }
 
 // Program End
