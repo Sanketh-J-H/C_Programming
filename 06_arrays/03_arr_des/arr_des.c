@@ -6,22 +6,48 @@
  * the proprietary works, trade secrets, and copyrights of Embitel or its licensors.
  * For further information, contact community.ruggedboard.com / info@ruggedboard.com
  *
- * Application: 
- * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Application:
+ * Brief:
+ * Author: Sanketh J H
+ * Title:  Trainee
+ * Last Modified Date: 29.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
 int main()
 {
-     
-     return 0;
+    int n, temp;
+    printf("Plz enter size of array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("enter array elements: ");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    printf("your array is: ");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\narray in descending order is: ");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[i] < arr[j])
+            {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        printf("%d ", arr[i]);
+    }
+    return 0;
 }
 
 // Program End
