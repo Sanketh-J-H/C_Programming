@@ -8,20 +8,14 @@
  *
  * Application: 
  * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 29.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
-#include <stdio.h>
 
-// Main Function
-int main()
-{
-     
-     return 0;
-}
+
 
 // Program End
