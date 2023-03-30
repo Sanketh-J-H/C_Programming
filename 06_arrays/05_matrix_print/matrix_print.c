@@ -6,22 +6,46 @@
  * the proprietary works, trade secrets, and copyrights of Embitel or its licensors.
  * For further information, contact community.ruggedboard.com / info@ruggedboard.com
  *
- * Application: 
- * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Application:
+ * Brief:
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 30.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
 int main()
 {
-     
-     return 0;
+    int rows, cols;
+
+    printf("Please enter rows and columns of matrix:");
+    scanf("%d %d", &rows, &cols);
+
+    int matrix[rows][cols];
+
+    printf("Enter matrix elements:\n");
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    printf("Given matrix is:\n");
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
 }
 
 // Program End
