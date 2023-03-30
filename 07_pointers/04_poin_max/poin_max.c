@@ -6,22 +6,43 @@
  * the proprietary works, trade secrets, and copyrights of Embitel or its licensors.
  * For further information, contact community.ruggedboard.com / info@ruggedboard.com
  *
- * Application: 
- * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Application:
+ * Brief:
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 30.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
 int main()
 {
-     
-     return 0;
+    int num1, num2, *ptr1, *ptr2;
+
+    printf("Pointer : Find the maximum number between two numbers :\n");
+    printf("------------------------------------------------------------\n");
+
+    printf("Input the first number : ");
+    scanf("%d", &num1);
+
+    printf("Input the second number : ");
+    scanf("%d", &num2);
+
+    ptr1 = &num1; // Assign address of num1 to ptr1
+    ptr2 = &num2; // Assign address of num2 to ptr2
+
+    if (*ptr1 > *ptr2)
+    { // Compare values at addresses pointed by ptr1 and ptr2
+        printf("%d is the maximum number.\n", *ptr1);
+    }
+    else
+    {
+        printf("%d is the maximum number.\n", *ptr2);
+    }
+
+    return 0;
 }
 
 // Program End

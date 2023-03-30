@@ -8,20 +8,36 @@
  *
  * Application: 
  * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 30.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
-int main()
-{
-     
-     return 0;
+int main() {
+    char str[100], *ptr;
+    int len = 0;
+
+    printf("Pointer : Calculate the length of the string :\n");
+    printf("---------------------------------------------------\n");
+
+    printf("Input a string : ");
+    fgets(str, sizeof(str), stdin);  // Read string from user input
+
+    ptr = str;  // Assign the address of str[0] to ptr
+
+    while (*ptr != '\0') {  // Loop until null character is found
+        len++;  // Increment length for each character
+        ptr++;  // Move the pointer to the next character
+    }
+
+    printf("The length of the given string %s is : %d\n", str, len);
+
+    return 0;
 }
+
 
 // Program End
