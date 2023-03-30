@@ -6,21 +6,40 @@
  * the proprietary works, trade secrets, and copyrights of Embitel or its licensors.
  * For further information, contact community.ruggedboard.com / info@ruggedboard.com
  *
- * Application: 
- * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Application:
+ * Brief:
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 30.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
 int main()
 {
-     
+     int num1, num2, sum;
+     int *ptr1, *ptr2;
+
+     printf("Pointer : Add two numbers :\n");
+     printf("--------------------------------\n");
+
+     printf("Input the first number : ");
+     scanf("%d", &num1);
+
+     getchar();
+
+     printf("Input the second number : ");
+     scanf("%d", &num2);
+
+     ptr1 = &num1; // Assign address of num1 to ptr1
+     ptr2 = &num2; // Assign address of num2 to ptr2
+
+     sum = *ptr1 + *ptr2; // Add values at addresses pointed by ptr1 and ptr2
+
+     printf("The sum of the entered numbers is : %d\n", sum);
+
      return 0;
 }
 
