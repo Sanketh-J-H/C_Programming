@@ -8,20 +8,47 @@
  *
  * Application: 
  * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 30.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
-int main()
-{
-     
-     return 0;
+int main() {
+    int rows, cols;
+
+    printf("Please enter rows and columns of matrix:");
+    scanf("%d %d", &rows, &cols);
+
+    int matrix[rows][cols];
+
+    printf("Enter matrix elements:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    printf("Given matrix is:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    for (int i = 0; i < rows; i++) {
+        int row_sum = 0;
+        for (int j = 0; j < cols; j++) {
+            row_sum += matrix[i][j];
+        }
+        printf("sum of row %d is: %d\n", i+1, row_sum);
+    }
+
+    return 0;
 }
 
 // Program End
