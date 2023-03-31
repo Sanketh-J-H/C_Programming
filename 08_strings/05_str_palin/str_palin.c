@@ -35,6 +35,8 @@ int main() {
       }
    }
 
+   printf("Entered string is:%s\n",str);
+
    if(flag){
       printf("Given string is in palindrome\n");
    }
