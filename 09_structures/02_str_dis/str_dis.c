@@ -6,21 +6,50 @@
  * the proprietary works, trade secrets, and copyrights of Embitel or its licensors.
  * For further information, contact community.ruggedboard.com / info@ruggedboard.com
  *
- * Application: 
- * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Application:
+ * Brief:
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 31.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
 
-// Main Function
+struct distance
+{
+     int feet;
+     float inch;
+};
+
 int main()
 {
-     
+     struct distance d1, d2, sum;
+
+     printf("Enter 1st distance:\n");
+     printf("Enter feet: ");
+     scanf("%d", &d1.feet);
+     printf("Enter inch: ");
+     scanf("%f", &d1.inch);
+
+     printf("\nEnter 2nd distance:\n");
+     printf("Enter feet: ");
+     scanf("%d", &d2.feet);
+     printf("Enter inch: ");
+     scanf("%f", &d2.inch);
+
+     sum.inch = d1.inch + d2.inch;
+     sum.feet = d1.feet + d2.feet;
+
+     if (sum.inch > 12)
+     {
+          sum.inch -= 12;
+          sum.feet++;
+     }
+
+     printf("\nSum of distances = %d\'-%.1f\"", sum.feet, sum.inch);
+
      return 0;
 }
 
