@@ -8,20 +8,41 @@
  *
  * Application: 
  * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 31.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
+#include <string.h>
 
-// Main Function
-int main()
-{
-     
-     return 0;
+int main() {
+   char str[100];
+   int i, j, len;
+   int flag = 1;
+
+   printf("Enter your string for palindrome: ");
+   scanf("%[^\n]s", str); // Use %[^\n]s instead of %s to read the entire line
+
+   len = strlen(str);
+
+   for(i = 0, j = len - 1; i < len/2 && j >= len/2; i++, j--){
+      if(str[i] != str[j]){
+         flag = 0;
+         break;
+      }
+   }
+
+   if(flag){
+      printf("Given string is in palindrome\n");
+   }
+   else{
+      printf("Not in palindrome\n");
+   }
+
+   return 0;
 }
 
 // Program End

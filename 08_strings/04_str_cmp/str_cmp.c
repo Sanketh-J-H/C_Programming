@@ -8,20 +8,30 @@
  *
  * Application: 
  * Brief: 
- * Author: Natarajan S  ( natarajan.s@ruggedboard.com )
- * Title: Program Manager / Trainner
- * Last Modified Date: 19.09.2022
+ * Author: Sanketh J H
+ * Title: Trainee
+ * Last Modified Date: 23.03.2023
  *
 /*********************************************************************************************/
 
 // Header File
 #include <stdio.h>
+#include <string.h>
 
-// Main Function
-int main()
-{
-     
-     return 0;
+int main() {
+   char str[20], password[] = "danger";
+
+   printf("Please enter your password: ");
+   scanf("%[^\n]s", str); // Use %[^\n]s instead of %s to read the entire line
+
+   if(strcmp(str, password) == 0){
+      printf("Entered correct password\n");
+   }
+   else{
+      printf("Wrong password\n");
+   }
+
+   return 0;
 }
 
 // Program End
